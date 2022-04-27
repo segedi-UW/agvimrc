@@ -1,0 +1,24 @@
+[submodule ".vim/pack/gitPacks/start/auto-pairs"]
+	path = .vim/pack/gitPacks/start/auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs
+[submodule ".vim/pack/gitPacks/start/nerdcommenter"]
+	path = .vim/pack/gitPacks/start/nerdcommenter
+	url = https://github.com/preservim/nerdcommenter
+[submodule ".vim/pack/gitPacks/start/nerdtree"]
+	path = .vim/pack/gitPacks/start/nerdtree
+	url = https://github.com/preservim/nerdtree
+[submodule ".vim/pack/syntax"]
+	path = .vim/pack/syntax
+	url = https://github.com/bfrg/vim-cpp-modern
+[submodule ".vim/pack/gitPacks/start/lightline"]
+	path = .vim/pack/gitPacks/start/lightline
+	url = https://github.com/itchyny/lightline.vim
+[submodule ".vim/pack/gitPacks/colors/colorschemes"]
+	path = .vim/pack/gitPacks/colors/colorschemes
+	url = https://github.com/flazz/vim-colorschemes
+[submodule ".vim/colors"]
+	path = .vim/colors
+	url = https://github.com/flazz/vim-colorschemes
+[submodule ".vim/colorschemes"]
+	path = .vim/colorschemes
+	url = https://github.com/flazz/vim-colorschemes
