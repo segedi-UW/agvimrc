@@ -10,5 +10,8 @@ syn match className "\v\s[A-Z]\w*|^[A-Z]\w*"
 " See: https://github.com/bfrg/vim-cpp-modern/blob/master/after/syntax/c.vim
 syn match func "\<\h\w*\>\(\s\|\n\)*("me=e-1 contains=cParen,cCppParen
 
+System.out.println(test.add());
+if (test.add() && !test.add())
+
 hi def link className Structure
 hi def link func Function
