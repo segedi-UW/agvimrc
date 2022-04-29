@@ -63,7 +63,7 @@ augroup java_templates
 	autocmd FileType java :iabbrev <buffer> soutf System.out.printf("");
 	autocmd FileType java :iabbrev <buffer> serr System.err.println("");
 	autocmd FileType java :iabbrev <buffer> serrf System.err.printf("");
-	autocmd FileType java :iabbrev <buffer> psvm public static void main(String[] args) {<cr><cr>return;}<up><up><><tab>
+	autocmd FileType java :iabbrev <buffer> psvm public static void main(String[] args) {<cr><cr>return;}<up><up><tab>
 augroup END
 
 
@@ -197,6 +197,9 @@ set laststatus=2
 			"\ }
 
 " **************** NERDCommenter *************
+
+nnoremap <leader>n :NERDTreeToggle<CR>
+
 let g:NERDCreateDefaultMappings=1
 
 " Add spaces after comment delims by default
