@@ -146,6 +146,9 @@ set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx,*.c
 "********* NOTE That everything past this requires further downloads *******
 colorscheme molokai
 
+" If you want a non-transparent bg, comment this out
+hi Normal guibg=NONE ctermbg=NONE
+
 " *********** NERDCOMMENT PLUGIN ************
 " Create default mappings
 let g:NERDCreateDefaultMappings = 1
