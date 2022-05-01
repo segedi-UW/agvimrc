@@ -77,6 +77,9 @@ nnoremap <CR> :noh<CR>
 " Disable compatibility with vi which can cause unexpected issues.
 set nocompatible
 
+" This disables auto-newline at a certain column. I personally find it annoying
+set textwidth=0
+
 " Enable type file detection. Vim will be able to try to detect the type of file in use.
 filetype on
 
@@ -216,7 +219,5 @@ let g:NERDCommentEmptyLines=1
 
 " Enable NERDCommenterToggle to check all selected lines are commented or not
 let g:NERDToggleCheckAllLines=1
-
-set textwidth=0
 
 noh
