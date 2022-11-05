@@ -12,6 +12,8 @@ iabbrev @pemail@ aj.segedi@gmail.com
 iabbrev @wemail@ segedi@wisc.edu
 iabbrev @web@ https://www.ajseg.com
 
+set belloff=all
+
 nnoremap H I<esc>
 nnoremap L A<esc>
 
@@ -42,10 +44,8 @@ nnoremap <leader>sw :execute 'leftabove split ' . bufname("#") <cr>
 " grep note that <cword> greps like w matches words, cWORD does it like W
 nnoremap <leader>g :silent execute "grep! -R " . shellescape(expand('<cWORD>')) . " ."<cr>:copen 8<cr>
 
-" tmp remap esc to learn jk
-inoremap <esc> <nop>
 " Enter the very magic regex parsing mode by default
-nnoremap / /\v
+" nnoremap / /\v
 
 " filetype specific comments
 augroup filetype_comments
@@ -219,5 +219,27 @@ let g:NERDCommentEmptyLines=1
 
 " Enable NERDCommenterToggle to check all selected lines are commented or not
 let g:NERDToggleCheckAllLines=1
+
+let &t_SI = "\e[6 q"
+let &t_EI = "\e[2 q"
+
+" reset the cursor on start (for older versions of vim, usually not required)
+augroup autocursor
+au!
+autocmd VimEnter * silent !echo -ne "\e[2 q"
+augroup END
+"Other options (replace the number after \e[):
+
+"Ps = 0  -> blinking block.
+"Ps = 1  -> blinking block (default).
+"Ps = 2  -> steady block.
+"Ps = 3  -> blinking underline.
+"Ps = 4  -> steady underline.
+"Ps = 5  -> blinking bar (xterm).
+"Ps = 6  -> steady bar (xterm).
+
+hi! MatchParen cterm=NONE,bold ctermfg=Yellow gui=NONE,bold  guibg=#eee8d5 guifg=NONE
+" Test it out
+"{	          }
 
 noh
